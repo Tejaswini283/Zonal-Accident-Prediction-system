@@ -1,22 +1,18 @@
-# Zonal-Accident-Prediction-system
-linear regression, random forest classifier ,Catboost regression, LGBM regression
-# Project Report - README
+# Zonal Accident Risk Prediction
 
-## Report Description
-This project report presents the findings and analysis of a study conducted to investigate the impact of social media on consumer purchasing behavior. The report provides insights into the relationship between social media usage and consumer decision-making, highlighting key trends and patterns observed in the data.
+## Description
+The Zonal Accident Risk Prediction project aims to analyze road accident data and identify patterns and features that contribute to accidents. The dataset includes information such as zonal codes, time, weather conditions, road conditions, casualties, and more. By understanding these factors, the project aims to reduce accidents and implement safety measures.
 
 ## Methodology
-The study utilized a mixed-methods approach, combining quantitative surveys and qualitative interviews. A sample of 500 participants was selected randomly from various demographics, and they were asked to complete an online survey regarding their social media usage and purchasing habits. Additionally, in-depth interviews were conducted with a subset of 20 participants to gain deeper insights into their experiences and motivations.
-
-The survey data was analyzed using statistical techniques such as correlation analysis and regression modeling. The qualitative data from the interviews was analyzed through thematic coding and content analysis, identifying recurring themes and patterns in the participants' responses.
+1. **Data Collection**: The accident risk data was sourced from Kaggle and consisted of multiple CSV files containing records of road accidents in different postal codes. The data was imported into Google Drive and Colab for analysis.
+2. **Exploratory Data Analysis**: The dataset was thoroughly explored to gain insights into the data quality and identify any missing or inconsistent values. Data cleaning techniques were applied to ensure data consistency.
+3. **Feature Selection**: Relevant predictors were selected, including police force, number of vehicles involved, day of the week, casualties, and urban/rural area. These features were vectorized for model building.
+4. **Model Building**: Linear regression, random forest classification, and other models were implemented to predict factors such as speed limits and fatalities. Model performance was evaluated using metrics such as accuracy, root mean squared error, and r-squared value.
+5. **Insights and Results**: The project generated insights into the highest accident-prone postal codes, road types, and day-of-week effects on accidents. Feature importance analysis helped identify key factors contributing to accidents. The findings can be used to implement targeted safety measures and reduce the accident rate.
 
 ## Insights
-The analysis revealed several key insights:
-
-1. Social media has a significant influence on consumer purchasing behavior, with 80% of respondents reporting that they have made a purchase based on information they saw on social media platforms.
-2. Instagram emerged as the most influential platform for product discovery and inspiration, particularly in the fashion and beauty industries.
-3. Trust and authenticity were identified as crucial factors in consumers' decision-making process. Influencer endorsements and user-generated content were found to be effective in building trust and influencing purchase decisions.
-4. Targeted advertising and personalized recommendations based on user preferences were perceived positively by consumers, leading to increased engagement and conversion rates.
-5. Social media also played a role in post-purchase behavior, with consumers sharing their experiences and opinions on products/services through reviews and social media posts.
-
-These findings highlight the growing importance of social media as a marketing tool and provide valuable insights for businesses looking to optimize their social media strategies and engage with their target audience effectively.
+- Certain postal codes, such as 'BB2 7NP' and 'B32 1AG', experienced the highest number of accidents with corresponding fatalities.
+- The analysis revealed that Saturday had the highest number of accidents, possibly due to increased travel and social activities. Surprisingly, Wednesday also had a high accident count.
+- Linear regression models provided insights into factors influencing speed limits, while random forest classification helped predict speed limits based on selected features.
+- Feature importance analysis highlighted the significance of factors like police force and speed limits in accident rates.
+- The project aimed to provide a better understanding of accident risk factors and support the implementation of safety measures to reduce accidents.
